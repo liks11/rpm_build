@@ -1,0 +1,8 @@
+Check whether an option is enabled or disabled
+To define BuildRequires depending on the command-line switch, you can use the %{with foo} macro:
+%if %{with gnutls}
+BuildRequires:  gnutls-devel
+%endif
+%if %{with openssl}
+BuildRequires:  openssl-devel
+%endif
